@@ -9,15 +9,27 @@
 </head>
 <body>
   <form action="/submit" method="post" autocomplete="on">
-  <h1 id="header">NFL Combine Registration Form</h1>
-  <div id="wrapper">
+    <h1 id="header">NFL Combine Registration Form</h1>
+    <div id="wrapper">
     <!-- Personal Information Section -->
-    <fieldset>
-      <legend class="form_title">Personal Information</legend>
-        <div class="main"><label>Name: <input type="text"></label></div>
-        <div class="main"><label>Email: <input type="email" required autocomplete="email" placeholder="example@email.com"></label></div>
-        <div class="main"><label>Phone: <input type="tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label></div>
-        <div class="main"><label>Date of Birth: <input type="date"></label></div>
-    </fieldset>
+      <fieldset>
+        <legend class="form_title">Personal Information</legend>
+          <div class="main"><label>Name: <input type="text"></label></div>
+          <div class="main"><label>Email: <input type="email" required autocomplete="email" placeholder="example@email.com"></label></div>
+          <div class="main"><label>Phone: <input type="tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label></div>
+          <div class="main"><label>Date of Birth: <input type="date"></label></div>
+      </fieldset>
+
+    <!-- Dietary Preferences Section -->
+      <fieldset>
+        <legend class="form_title">Dietary Preferences</legend>
+        <p>Please let us know of any food allergies you may have for scheduled lunch after each position group's 40 Yard Dash.</p>
+        <div><input type="text"></div>
+
+    <!-- Submit Button -->
+        <div id="submit"><input type="submit" value="Submit"></div>
+      </fieldset>
+    </div>
+  </form>
 </body>
 </html>
