@@ -8,6 +8,16 @@
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
-
+  <form action="/submit" method="post" autocomplete="on">
+  <h1 id="header">NFL Combine Registration Form</h1>
+  <div id="wrapper">
+    <!-- Personal Information Section -->
+    <fieldset>
+      <legend class="form_title">Personal Information</legend>
+        <div class="main"><label>Name: <input type="text"></label></div>
+        <div class="main"><label>Email: <input type="email" required autocomplete="email" placeholder="example@email.com"></label></div>
+        <div class="main"><label>Phone: <input type="tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label></div>
+        <div class="main"><label>Date of Birth: <input type="date"></label></div>
+    </fieldset>
 </body>
 </html>
