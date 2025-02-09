@@ -85,3 +85,31 @@ input[type="text"], input[type="email"], input[type="date"], input[type="tel"] {
     width: 95%;
   }
 }
+/* Media Query for large devices (Desktops) */
+@media only screen and (min-width: 1025px) {
+  fieldset {
+    margin-bottom: 50px; /* Adjust this value to increase or decrease the spacing */
+  }
+  
+  #wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main {
+    display: block;
+    width: 45%; /* Adjust this for two-column layouts */
+    text-align: left; /* Ensure the text and inputs are aligned */
+  }
+
+  input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+  }
+}
+
+/* Media Query for extra large devices (Very large desktops) */
+@media only screen and (min-width: 1281px) {
+  .main {
+    font-size: 1.8em; /* Optionally scale the font size for larger screens */
+  }
+}
